@@ -18,7 +18,7 @@
   Build cuda_11.7.r11.7/compiler.31442593_0
   ```
 * However, pytorch (with cuda 11.7) can't detect the GPU with a return of False for this command torch.cuda.is_available()
-* After working on this a little bit, I finally identified the problem. It was this command in the instruction that uninstall replace nvidia driver 515 with 535 for no reason. 
+* After working on this a little bit, I finally identified the problem. It was this command in the instruction that replaced nvidia driver 515 with 535 for no reason. 
   ```
   sudo apt install cuda-11-7
 
